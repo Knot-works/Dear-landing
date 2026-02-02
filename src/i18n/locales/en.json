@@ -105,10 +105,171 @@
   },
   "terms": {
     "title": "Terms of Service",
-    "lastUpdated": "Last updated: February 1, 2026"
+    "lastUpdated": "Last updated: February 2, 2026",
+    "intro": "These Terms of Service govern the use of the smartphone application \"Dear\" (the \"Service\") provided by Knot (the \"Company\"). By using the Service, you agree to these terms.",
+    "sections": [
+      {
+        "title": "Article 1 (Application)",
+        "content": "These Terms govern the conditions of use for the Service provided by the Company. Users shall use the Service in accordance with these Terms."
+      },
+      {
+        "title": "Article 2 (User Registration)",
+        "content": "Those who wish to use the Service shall agree to these Terms and apply for registration in the manner specified by the Company. Registration is completed when approved by the Company.",
+        "list": [
+          "False information provided during registration",
+          "Application from someone who has previously violated these Terms",
+          "Other cases where the Company deems registration inappropriate"
+        ]
+      },
+      {
+        "title": "Article 3 (Service Description)",
+        "content": "The Service is a letter exchange service for couples in long-distance relationships. Users can exchange letters with their partner, use prompts, and optionally publish letters."
+      },
+      {
+        "title": "Article 4 (Fees and Auto-Renewal)",
+        "content": "The following fees apply to the Service:",
+        "list": [
+          "Monthly plan: $2.99/month",
+          "Annual plan: $29.99/year",
+          "Free plan allows up to 1 letter per week",
+          "When either partner pays, both can access all features"
+        ],
+        "note": "Subscriptions auto-renew. Unless cancelled at least 24 hours before the end of the current period, subscriptions will automatically renew at the same price. You can manage or cancel subscriptions in iPhone Settings → Apple ID → Subscriptions → Dear."
+      },
+      {
+        "title": "Article 5 (Prohibited Activities)",
+        "content": "Users shall not engage in the following activities:",
+        "list": [
+          "Acts that violate laws or public order and morals",
+          "Acts related to criminal activities",
+          "Acts that may interfere with the operation of the Service",
+          "Collecting or storing personal information of other users",
+          "Unauthorized access or attempts thereof",
+          "Impersonating other users",
+          "Posting violent, threatening, discriminatory, defamatory, obscene, or otherwise objectionable content",
+          "Posting content containing hate speech, racism, or sexism",
+          "Posting content involving child exploitation, abuse, or harmful to minors"
+        ],
+        "note": "The Company has zero tolerance for objectionable content including the prohibited activities above."
+      },
+      {
+        "title": "Article 6 (Content Monitoring and Response)",
+        "content": "Users can report inappropriate content or prohibited activities through the in-app reporting feature. The Company will review reports within 24 hours and take appropriate action.",
+        "list": [
+          "Warning notification",
+          "Content removal",
+          "Service usage restrictions",
+          "Temporary or permanent account suspension",
+          "Legal action"
+        ]
+      },
+      {
+        "title": "Article 7 (Service Suspension)",
+        "content": "The Company may suspend or interrupt all or part of the Service without prior notice in the following cases:",
+        "list": [
+          "Maintenance or updates to computer systems",
+          "Force majeure events such as earthquakes, lightning, fire, power outages, or natural disasters",
+          "Computer or communication line accidents",
+          "Other cases where the Company determines Service provision is difficult"
+        ]
+      },
+      {
+        "title": "Article 8 (Copyright)",
+        "content": "Users retain copyright to letters and other content posted or transmitted through the Service. Users grant the Company a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, create derivative works, display, and perform such content."
+      },
+      {
+        "title": "Article 9 (Disclaimer)",
+        "content": "The Company does not guarantee that the Service is free from defects. The Company shall not be liable for any damages incurred by users through the Service."
+      },
+      {
+        "title": "Article 10 (Governing Law and Jurisdiction)",
+        "content": "These Terms shall be governed by the laws of Japan. Any disputes arising from the Service shall be subject to the exclusive jurisdiction of the courts where the Company's headquarters is located."
+      }
+    ]
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: February 1, 2026"
+    "lastUpdated": "Last updated: February 2, 2026",
+    "intro": "Knot (the \"Company\") establishes the following Privacy Policy regarding the handling of user personal information in the smartphone application \"Dear\" (the \"Service\").",
+    "sections": [
+      {
+        "title": "Article 1 (Information Collected)",
+        "content": "The Company may collect the following information in providing the Service:",
+        "subsections": [
+          {
+            "title": "Information Provided by Users",
+            "list": ["Authentication information (Apple ID, Google Account, email address)", "Nickname", "Letter content", "Partner relationship information (couple registration)"]
+          },
+          {
+            "title": "Automatically Collected Information",
+            "list": ["Device information (model, OS version)", "App usage data", "Error logs"]
+          }
+        ]
+      },
+      {
+        "title": "Article 2 (Purpose of Use)",
+        "content": "The Company uses collected information for the following purposes:",
+        "list": [
+          "Providing and operating the Service",
+          "Responding to user inquiries",
+          "Improving the Service and developing new features",
+          "Responding to Terms of Service violations",
+          "Sending important notifications about the Service"
+        ]
+      },
+      {
+        "title": "Article 3 (Third-Party Disclosure)",
+        "content": "The Company will not disclose user personal information to third parties except in the following cases:",
+        "list": [
+          "With user consent",
+          "When required by law",
+          "When necessary to protect life, body, or property",
+          "When providing to contractors within the scope necessary for Service operation"
+        ]
+      },
+      {
+        "title": "Article 4 (Information Management)",
+        "content": "The Company properly manages user personal information and implements reasonable security measures to prevent unauthorized access, loss, destruction, alteration, and leakage."
+      },
+      {
+        "title": "Article 5 (External Services)",
+        "content": "The Service uses the following external services:",
+        "table": {
+          "headers": ["Service", "Provider", "Purpose"],
+          "rows": [
+            ["Firebase Authentication", "Google LLC", "User authentication"],
+            ["Cloud Firestore", "Google LLC", "Data storage"],
+            ["Firebase Cloud Messaging", "Google LLC", "Push notifications"],
+            ["RevenueCat", "RevenueCat, Inc.", "Subscription management"]
+          ]
+        }
+      },
+      {
+        "title": "Article 6 (Data Retention Period)",
+        "content": "The Company retains user personal information for the period necessary to achieve the purpose of use. When a user deletes their account, the Company will delete the relevant personal information within a reasonable period."
+      },
+      {
+        "title": "Article 7 (User Rights)",
+        "content": "Users have the following rights with respect to the Company:",
+        "list": [
+          "Right of access - Access to your personal information",
+          "Right of rectification - Correction of inaccurate personal information",
+          "Right of erasure - Deletion of personal information (available through account deletion)",
+          "Data portability - Obtaining your personal information"
+        ]
+      },
+      {
+        "title": "Article 8 (Children's Privacy)",
+        "content": "The Service is not intended for children under 13. The Company does not intentionally collect personal information from children under 13."
+      },
+      {
+        "title": "Article 9 (Privacy Policy Changes)",
+        "content": "The Company may change this Policy as necessary. Significant changes will be notified within the Service."
+      },
+      {
+        "title": "Article 10 (Contact)",
+        "content": "For inquiries about this Policy, please contact support@knotwith.com."
+      }
+    ]
   }
 }
