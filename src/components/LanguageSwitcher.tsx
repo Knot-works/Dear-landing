@@ -2,47 +2,29 @@ import { useTranslation } from 'react-i18next'
 import styles from './LanguageSwitcher.module.css'
 
 const languages = [
-  { code: 'ja', label: '日本語' },
-  { code: 'en', label: 'English' },
-  { code: 'ko', label: '한국어' },
+  { code: 'ja', label: 'JP' },
+  { code: 'en', label: 'EN' },
+  { code: 'ko', label: 'KO' },
 ]
 
 export function LanguageSwitcher() {
   const { i18n } = useTranslation()
-
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    i18n.changeLanguage(e.target.value)
-  }
+  const currentLang = i18n.language?.substring(0, 2) || 'ja'
 
   return (
-    <div className={styles.wrapper}>
-      <svg
-        className={styles.icon}
-        width="16"
-        height="16"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <circle cx="12" cy="12" r="10" />
-        <path d="M2 12h20" />
-        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-      </svg>
-      <select
-        className={styles.select}
-        value={i18n.language?.substring(0, 2) || 'ja'}
-        onChange={handleChange}
-        aria-label="Select language"
-      >
-        {languages.map((lang) => (
-          <option key={lang.code} value={lang.code}>
+    <div className={styles.switcher}>
+      {languages.map((lang, index) => (
+        <span key={lang.code}>
+          <button
+            className={`${styles.lang} ${currentLang === lang.code ? styles.active : ''}`}
+            onClick={() => i18n.changeLanguage(lang.code)}
+            aria-label={`Switch to ${lang.label}`}
+          >
             {lang.label}
-          </option>
-        ))}
-      </select>
+          </button>
+          {index < languages.length - 1 && <span className={styles.divider}>/</span>}
+        </span>
+      ))}
     </div>
   )
 }
