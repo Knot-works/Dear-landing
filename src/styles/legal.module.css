@@ -135,3 +135,59 @@
   margin: 0;
   font-size: 0.9375rem;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .legalPage {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .legalPage {
+    padding-top: calc(70px + var(--space-lg));
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+
+  .legalPage h1 {
+    font-size: 1.5rem;
+  }
+
+  .legalPage h2 {
+    font-size: 1.125rem;
+    margin-top: var(--space-lg);
+  }
+
+  .legalPage table {
+    font-size: 0.75rem;
+  }
+
+  .legalPage th,
+  .legalPage td {
+    padding: var(--space-xs);
+  }
+
+  .contactBox {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .emailLink {
+    font-size: 1rem;
+    word-break: break-all;
+  }
+
+  .faqItem {
+    padding: var(--space-sm);
+  }
+
+  .faqItem h4 {
+    font-size: 0.9375rem;
+  }
+
+  .faqItem p {
+    font-size: 0.875rem;
+  }
+}

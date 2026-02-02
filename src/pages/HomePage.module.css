@@ -334,25 +334,65 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive */
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+  .hero {
+    gap: var(--space-lg);
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+
+  .heroVisual {
+    height: 350px;
+  }
+
+  .features {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+
+  .steps {
+    gap: var(--space-md);
+  }
+
+  .pricingCards {
+    gap: var(--space-md);
+  }
+}
+
+/* Mobile: < 768px */
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
-    padding-top: calc(80px + var(--space-xl));
+    padding-top: calc(70px + var(--space-lg));
+    padding-bottom: var(--space-xl);
+    min-height: auto;
+  }
+
+  .heroLabel {
+    font-size: 0.75rem;
   }
 
   .heroDescription {
     max-width: 100%;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .heroVisual {
-    height: 250px;
+    height: 220px;
     order: -1;
+    margin-bottom: var(--space-md);
   }
 
   .floatingLetter {
     padding: var(--space-sm) var(--space-md);
+  }
+
+  .letterText {
+    font-size: 0.875rem;
   }
 
   .letter1 {
@@ -365,14 +405,51 @@
     left: 5%;
   }
 
+  .ctaButton {
+    width: 100%;
+    justify-content: center;
+    padding: var(--space-md);
+  }
+
+  .features {
+    padding: var(--space-xl) var(--space-md);
+  }
+
   .feature,
   .featureRight {
     flex-direction: column;
     text-align: center;
+    padding: var(--space-md);
+  }
+
+  .featureIcon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .howItWorks {
+    padding: var(--space-xl) var(--space-md);
   }
 
   .steps {
     grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .step {
+    padding: var(--space-md);
+  }
+
+  .stepNumber {
+    font-size: 2rem;
+  }
+
+  .pricing {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  .pricingNote {
+    font-size: 0.875rem;
   }
 
   .pricingCards {
@@ -383,5 +460,38 @@
   .pricingCard {
     max-width: 100%;
     width: 100%;
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .price {
+    font-size: 2rem;
+  }
+
+  .finalCta {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  .finalCta h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small Mobile: < 375px */
+@media (max-width: 375px) {
+  .hero {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+
+  .heroVisual {
+    height: 180px;
+  }
+
+  .floatingLetter {
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  .letterText {
+    font-size: 0.75rem;
   }
 }
