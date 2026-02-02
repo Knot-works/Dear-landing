@@ -384,7 +384,7 @@
   .heroVisual {
     height: 220px;
     order: -1;
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
   }
 
   .floatingLetter {
