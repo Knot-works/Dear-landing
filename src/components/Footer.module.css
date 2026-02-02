@@ -1,0 +1,50 @@
+.footer {
+  padding: var(--space-xl) var(--space-lg);
+  background: var(--color-bg-dark);
+  color: var(--color-bg);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-lg);
+}
+
+.brand .logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-bg);
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.brand p {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+.links {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.links a {
+  font-size: 0.875rem;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
