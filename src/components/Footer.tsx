@@ -14,7 +14,7 @@ export function Footer() {
           <Link to="/terms">利用規約</Link>
           <Link to="/privacy">プライバシーポリシー</Link>
         </div>
-        <p className={styles.copyright}>&copy; 2025 Knot. All rights reserved.</p>
+        <p className={styles.copyright}>&copy; 2026 Knot. All rights reserved.</p>
       </div>
     </footer>
   )
