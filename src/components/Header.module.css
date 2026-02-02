@@ -62,17 +62,26 @@
   width: 100%;
 }
 
+/* Mobile Controls (Language Switcher + Menu Button) */
+.mobileControls {
+  display: none;
+  align-items: center;
+  gap: var(--space-sm);
+  position: relative;
+  z-index: 120;
+}
+
 /* Mobile Menu Button */
 .menuButton {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 10px;
-  position: relative;
-  z-index: 120;
 }
 
 .menuIcon {
@@ -214,9 +223,7 @@
     display: none;
   }
 
-  .menuButton {
+  .mobileControls {
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }

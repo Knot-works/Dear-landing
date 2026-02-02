@@ -22,14 +22,17 @@ export function Header() {
             <LanguageSwitcher />
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className={styles.menuButton}
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label={t('nav.home')}
-          >
-            <span className={`${styles.menuIcon} ${isOpen ? styles.open : ''}`} />
-          </button>
+          {/* Mobile Controls */}
+          <div className={styles.mobileControls}>
+            <LanguageSwitcher />
+            <button
+              className={styles.menuButton}
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label={t('nav.home')}
+            >
+              <span className={`${styles.menuIcon} ${isOpen ? styles.open : ''}`} />
+            </button>
+          </div>
         </nav>
       </header>
 
@@ -49,7 +52,6 @@ export function Header() {
           <Link to="/support" onClick={() => setIsOpen(false)}>{t('nav.support')}</Link>
           <Link to="/terms" onClick={() => setIsOpen(false)}>{t('nav.terms')}</Link>
           <Link to="/privacy" onClick={() => setIsOpen(false)}>{t('nav.privacy')}</Link>
-          <LanguageSwitcher />
         </div>
       </div>
     </>
