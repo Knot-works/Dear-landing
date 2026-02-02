@@ -1,0 +1,26 @@
+.container {
+  overflow: hidden;
+}
+
+.word {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%);
+  transition:
+    opacity 0.4s var(--ease-out-quart),
+    transform 0.4s var(--ease-out-quart);
+}
+
+.char.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.space {
+  display: inline-block;
+}
