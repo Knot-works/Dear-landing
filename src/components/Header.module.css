@@ -134,6 +134,26 @@
   visibility: visible;
 }
 
+.closeButton {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-md);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text);
+  transition: color 0.2s;
+}
+
+.closeButton:hover {
+  color: var(--color-primary);
+}
+
 .mobileMenuContent {
   display: flex;
   flex-direction: column;
