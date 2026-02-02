@@ -206,6 +206,10 @@
 
 /* Mobile: < 768px */
 @media (max-width: 768px) {
+  .header {
+    padding: var(--space-xs) var(--space-md);
+  }
+
   .links {
     display: none;
   }
