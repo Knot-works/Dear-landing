@@ -1,7 +1,7 @@
 /* Hero Section */
 .hero {
   min-height: 100vh;
-  padding: calc(80px + var(--space-xl)) var(--space-lg) var(--space-2xl);
+  padding: calc(80px + var(--space-lg)) var(--space-lg) var(--space-2xl);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-xl);
