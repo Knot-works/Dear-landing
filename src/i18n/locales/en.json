@@ -1,0 +1,114 @@
+{
+  "common": {
+    "appName": "Dear",
+    "tagline": "Keep your feelings close, even when apart",
+    "copyright": "© 2026 Knot. All rights reserved."
+  },
+  "nav": {
+    "home": "Home",
+    "support": "Support",
+    "terms": "Terms",
+    "privacy": "Privacy"
+  },
+  "hero": {
+    "label": "For couples in long-distance relationships",
+    "title1": "Keep your feelings close,",
+    "title2": "even when apart",
+    "description1": "No need to reply right away.",
+    "description2": "Read it when you can.",
+    "description3": "Dear is a letter app that delivers your feelings, no matter the distance.",
+    "cta": "Download on the App Store",
+    "letter1Date": "Dec 24",
+    "letter1Text": "I can't see you today,\nbut I'm thinking of you",
+    "letter2Date": "Jan 15",
+    "letter2Text": "I'll keep this safe\nuntil we meet again"
+  },
+  "features": {
+    "time": {
+      "title": "Designed for time differences",
+      "description": "No rush to reply. Read it when you're ready."
+    },
+    "private": {
+      "title": "A space just for two",
+      "description": "No comparisons. Just your own private space."
+    },
+    "support": {
+      "title": "Only encouragement",
+      "description": "No comments. Just support from others on the same journey."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "step1": {
+      "title": "Choose a prompt",
+      "description": "Pick from suggested prompts or write freely"
+    },
+    "step2": {
+      "title": "Write your feelings",
+      "description": "Take your time. Put your feelings into words"
+    },
+    "step3": {
+      "title": "Send it",
+      "description": "Deliver to your partner. They read it when ready"
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "note": "One payment covers both partners",
+    "free": {
+      "name": "Free Plan",
+      "price": "$0",
+      "period": "",
+      "features": ["First 3 letters free", "Basic features"]
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "$2.99",
+      "period": "/month",
+      "badge": "Recommended",
+      "features": ["Unlimited letters", "All prompts", "View public letters", "Support feature"]
+    }
+  },
+  "cta": {
+    "label": "Distance doesn't stop feelings",
+    "title": "Start sharing your feelings today",
+    "button": "Download on the App Store"
+  },
+  "footer": {
+    "support": "Support & Contact",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  },
+  "support": {
+    "title": "Support & Contact",
+    "lastUpdated": "Last updated: February 1, 2026",
+    "contactTitle": "Contact Us",
+    "contactDescription": "If you have any questions or requests, please feel free to contact us at the email address below.",
+    "responseTime": "We typically respond within 2-3 business days.",
+    "faqTitle": "FAQ",
+    "faq1": {
+      "question": "How do I register as a couple?",
+      "answer": "Create an invitation link in the app and share it with your partner. When they open the app through the link, you'll be automatically registered as a couple."
+    },
+    "faq2": {
+      "question": "Who pays for the subscription?",
+      "answer": "Either partner can pay, and it covers both of you. Payment status is not shown to your partner."
+    },
+    "faq3": {
+      "question": "Who can see my letters?",
+      "answer": "Letters are only delivered to your partner. They're only shown to other users if you choose to make them public (anonymously)."
+    },
+    "faq4": {
+      "question": "How do I delete my account?",
+      "answer": "Select 'Delete Account' in the app settings. All your data will be permanently deleted."
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: February 1, 2026"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: February 1, 2026"
+  }
+}

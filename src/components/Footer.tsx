@@ -1,20 +1,23 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import styles from './Footer.module.css'
 
 export function Footer() {
+  const { t } = useTranslation()
+
   return (
     <footer className={styles.footer}>
       <div className={styles.content}>
         <div className={styles.brand}>
           <span className={styles.logo}>Dear.</span>
-          <p>会えない時間に、気持ちを預ける</p>
+          <p>{t('common.tagline')}</p>
         </div>
         <div className={styles.links}>
-          <Link to="/support">サポート・お問い合わせ</Link>
-          <Link to="/terms">利用規約</Link>
-          <Link to="/privacy">プライバシーポリシー</Link>
+          <Link to="/support">{t('footer.support')}</Link>
+          <Link to="/terms">{t('footer.terms')}</Link>
+          <Link to="/privacy">{t('footer.privacy')}</Link>
         </div>
-        <p className={styles.copyright}>&copy; 2026 Knot. All rights reserved.</p>
+        <p className={styles.copyright}>{t('common.copyright')}</p>
       </div>
     </footer>
   )

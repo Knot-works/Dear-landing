@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import styles from '../styles/legal.module.css'
 
 export function TermsPage() {
+  const { t } = useTranslation()
+
   return (
     <div className={styles.legalPage}>
-      <h1>利用規約</h1>
-      <p className={styles.lastUpdated}>最終更新日：2026年2月2日</p>
+      <h1>{t('terms.title')}</h1>
+      <p className={styles.lastUpdated}>{t('terms.lastUpdated')}</p>
 
       <h2>第1条（適用）</h2>
       <p>本規約は、Knot（以下「当社」といいます）が提供するスマートフォンアプリケーション「Dear」（以下「本サービス」といいます）の利用条件を定めるものです。ユーザーの皆様には、本規約に従って本サービスをご利用いただきます。</p>

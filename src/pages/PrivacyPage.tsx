@@ -1,10 +1,13 @@
+import { useTranslation } from 'react-i18next'
 import styles from '../styles/legal.module.css'
 
 export function PrivacyPage() {
+  const { t } = useTranslation()
+
   return (
     <div className={styles.legalPage}>
-      <h1>プライバシーポリシー</h1>
-      <p className={styles.lastUpdated}>最終更新日：2026年2月2日</p>
+      <h1>{t('privacy.title')}</h1>
+      <p className={styles.lastUpdated}>{t('privacy.lastUpdated')}</p>
 
       <p>Knot（以下「当社」といいます）は、当社が提供するスマートフォンアプリケーション「Dear」（以下「本サービス」といいます）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます）を定めます。</p>
 

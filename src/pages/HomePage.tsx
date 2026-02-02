@@ -1,23 +1,26 @@
+import { useTranslation } from 'react-i18next'
 import styles from './HomePage.module.css'
 
 export function HomePage() {
+  const { t } = useTranslation()
+
   return (
     <>
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <p className={styles.heroLabel}>遠距離恋愛をしている、ふたりのために</p>
+          <p className={styles.heroLabel}>{t('hero.label')}</p>
           <h1 className={styles.heroTitle}>
-            会えない時間に、<br />
-            <span className={styles.highlight}>気持ちを預ける</span>
+            {t('hero.title1')}<br />
+            <span className={styles.highlight}>{t('hero.title2')}</span>
           </h1>
           <p className={styles.heroDescription}>
-            すぐに返さなくていい。<br />
-            読めるときに、読めばいい。<br />
-            Dearは、離れていても想いを届けるレターアプリです。
+            {t('hero.description1')}<br />
+            {t('hero.description2')}<br />
+            {t('hero.description3')}
           </p>
           <a href="#" className={styles.ctaButton}>
-            <span>App Storeでダウンロード</span>
+            <span>{t('hero.cta')}</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
@@ -26,14 +29,18 @@ export function HomePage() {
         <div className={styles.heroVisual}>
           <div className={`${styles.floatingLetter} ${styles.letter1}`}>
             <div className={styles.letterContent}>
-              <p className={styles.letterDate}>12月24日</p>
-              <p className={styles.letterText}>今日は会えないけど、<br />君のことを想ってる</p>
+              <p className={styles.letterDate}>{t('hero.letter1Date')}</p>
+              <p className={styles.letterText}>{t('hero.letter1Text').split('\n').map((line, i) => (
+                <span key={i}>{line}{i === 0 && <br />}</span>
+              ))}</p>
             </div>
           </div>
           <div className={`${styles.floatingLetter} ${styles.letter2}`}>
             <div className={styles.letterContent}>
-              <p className={styles.letterDate}>1月15日</p>
-              <p className={styles.letterText}>次に会えるまで、<br />大切にとっておくね</p>
+              <p className={styles.letterDate}>{t('hero.letter2Date')}</p>
+              <p className={styles.letterText}>{t('hero.letter2Text').split('\n').map((line, i) => (
+                <span key={i}>{line}{i === 0 && <br />}</span>
+              ))}</p>
             </div>
           </div>
         </div>
@@ -48,8 +55,8 @@ export function HomePage() {
             </svg>
           </div>
           <div className={styles.featureContent}>
-            <h3>時間差を、前提に</h3>
-            <p>既読機能はありません。すぐに返信する必要もありません。あなたのペースで、言葉を届けてください。</p>
+            <h3>{t('features.time.title')}</h3>
+            <p>{t('features.time.description')}</p>
           </div>
         </div>
 
@@ -60,8 +67,8 @@ export function HomePage() {
             </svg>
           </div>
           <div className={styles.featureContent}>
-            <h3>ふたりだけの場所</h3>
-            <p>誰かと比べられることはありません。ランキングもスコアもない、あなたたちだけの静かな空間。</p>
+            <h3>{t('features.private.title')}</h3>
+            <p>{t('features.private.description')}</p>
           </div>
         </div>
 
@@ -72,53 +79,56 @@ export function HomePage() {
             </svg>
           </div>
           <div className={styles.featureContent}>
-            <h3>応援だけがある</h3>
-            <p>公開したレターには、同じ距離を過ごす人たちからの「応援」だけが届きます。コメントはありません。</p>
+            <h3>{t('features.support.title')}</h3>
+            <p>{t('features.support.description')}</p>
           </div>
         </div>
       </section>
 
       {/* How it works */}
       <section className={styles.howItWorks}>
-        <h2 className={styles.sectionTitle}>Dearの使い方</h2>
+        <h2 className={styles.sectionTitle}>{t('howItWorks.title')}</h2>
         <div className={styles.steps}>
           <div className={styles.step}>
             <span className={styles.stepNumber}>01</span>
-            <h4>ふたりで始める</h4>
-            <p>招待コードを共有して、パートナーと繋がります。</p>
+            <h4>{t('howItWorks.step1.title')}</h4>
+            <p>{t('howItWorks.step1.description')}</p>
           </div>
           <div className={styles.step}>
             <span className={styles.stepNumber}>02</span>
-            <h4>レターを書く</h4>
-            <p>お題を使っても、自由に書いても。あなたの言葉で気持ちを綴ります。</p>
+            <h4>{t('howItWorks.step2.title')}</h4>
+            <p>{t('howItWorks.step2.description')}</p>
           </div>
           <div className={styles.step}>
             <span className={styles.stepNumber}>03</span>
-            <h4>想いを届ける</h4>
-            <p>パートナーに送る。または、同じ距離を過ごす人と共有する。</p>
+            <h4>{t('howItWorks.step3.title')}</h4>
+            <p>{t('howItWorks.step3.description')}</p>
           </div>
         </div>
       </section>
 
       {/* Pricing */}
       <section className={styles.pricing}>
-        <h2 className={styles.sectionTitle}>料金プラン</h2>
-        <p className={styles.pricingNote}>カップルのどちらか一方が登録すれば、<br />おふたりとも全機能をご利用いただけます。</p>
+        <h2 className={styles.sectionTitle}>{t('pricing.title')}</h2>
+        <p className={styles.pricingNote}>{t('pricing.note')}</p>
         <div className={styles.pricingCards}>
           <div className={styles.pricingCard}>
-            <h4>無料プラン</h4>
-            <p className={styles.price}>¥0</p>
-            <p className={styles.priceDetail}>週1通まで送信可能</p>
+            <h4>{t('pricing.free.name')}</h4>
+            <p className={styles.price}>{t('pricing.free.price')}</p>
+            <ul className={styles.planFeatures}>
+              {(t('pricing.free.features', { returnObjects: true }) as string[]).map((feature, i) => (
+                <li key={i}>{feature}</li>
+              ))}
+            </ul>
           </div>
           <div className={`${styles.pricingCard} ${styles.featured}`}>
-            <span className={styles.badge}>おすすめ</span>
-            <h4>プレミアム</h4>
-            <p className={styles.price}>¥300<span>/月</span></p>
-            <p className={styles.priceDetail}>年額プラン ¥3,000/年</p>
+            <span className={styles.badge}>{t('pricing.premium.badge')}</span>
+            <h4>{t('pricing.premium.name')}</h4>
+            <p className={styles.price}>{t('pricing.premium.price')}<span>{t('pricing.premium.period')}</span></p>
             <ul className={styles.planFeatures}>
-              <li>週7通まで送信可能</li>
-              <li>画像添付</li>
-              <li>すべての機能</li>
+              {(t('pricing.premium.features', { returnObjects: true }) as string[]).map((feature, i) => (
+                <li key={i}>{feature}</li>
+              ))}
             </ul>
           </div>
         </div>
@@ -126,10 +136,10 @@ export function HomePage() {
 
       {/* Final CTA */}
       <section className={styles.finalCta}>
-        <p className={styles.ctaLabel}>会えない夜に、読んでほしい言葉を</p>
-        <h2>距離があっても、<br />想いは届く</h2>
+        <p className={styles.ctaLabel}>{t('cta.label')}</p>
+        <h2>{t('cta.title')}</h2>
         <a href="#" className={`${styles.ctaButton} ${styles.ctaLight}`}>
-          <span>無料ではじめる</span>
+          <span>{t('cta.button')}</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M5 12h14M12 5l7 7-7 7"/>
           </svg>
