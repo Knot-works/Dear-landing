@@ -76,7 +76,7 @@
 /* Hero Visual */
 .heroVisual {
   position: relative;
-  height: 400px;
+  height: 360px;
 }
 
 .floatingLetter {
@@ -92,13 +92,13 @@
 }
 
 .letter1 {
-  top: 10%;
+  top: 5%;
   right: 10%;
   animation-delay: 0s;
 }
 
 .letter2 {
-  bottom: 15%;
+  bottom: 8%;
   left: 5%;
   animation-delay: -3s;
 }
