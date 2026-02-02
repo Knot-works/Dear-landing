@@ -44,7 +44,6 @@
   font-size: 1.125rem;
   color: var(--color-text-light);
   margin-bottom: var(--space-lg);
-  max-width: 400px;
 }
 
 .ctaButton {
