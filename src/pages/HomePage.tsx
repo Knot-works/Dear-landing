@@ -27,7 +27,7 @@ export function HomePage() {
             </p>
           </ScrollReveal>
           <ScrollReveal delay={300}>
-            <a href="#" className={styles.ctaButton}>
+            <a href="https://apps.apple.com/jp/app/dear/id6757598623" target="_blank" rel="noopener noreferrer" className={styles.ctaButton}>
               <span>{t('hero.cta')}</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -172,7 +172,7 @@ export function HomePage() {
           <h2>{t('cta.title')}</h2>
         </ScrollReveal>
         <ScrollReveal delay={200} direction="none">
-          <a href="#" className={`${styles.ctaButton} ${styles.ctaLight}`}>
+          <a href="https://apps.apple.com/jp/app/dear/id6757598623" target="_blank" rel="noopener noreferrer" className={`${styles.ctaButton} ${styles.ctaLight}`}>
             <span>{t('cta.button')}</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
